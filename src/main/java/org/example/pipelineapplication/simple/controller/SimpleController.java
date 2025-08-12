@@ -17,6 +17,7 @@ public class SimpleController {
     @GetMapping("/getSentence")
     public ResponseEntity<String> getSentence() {
         log.info("github Webhook Test By ngrok");
+        log.info("github Webhook - Jenkins Commit and Push -> Build");
         return ResponseEntity.status(HttpStatus.OK).body("Hello, World");
     }
 }
