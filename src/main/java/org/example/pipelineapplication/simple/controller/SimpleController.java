@@ -18,6 +18,7 @@ public class SimpleController {
     public ResponseEntity<String> getSentence() {
         log.info("github Webhook Test By ngrok");
         log.info("github Webhook - Jenkins Commit and Push -> Build");
+        log.info("github Webhook - Jenkins PipelineScript test");
         return ResponseEntity.status(HttpStatus.OK).body("Hello, World");
     }
 }
